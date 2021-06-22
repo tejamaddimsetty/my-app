@@ -11,6 +11,7 @@
       "password": "123abc"
     }
   ],
+
   "orders": [
     {
       "id": 1,
@@ -18,34 +19,34 @@
       "address": "Hyderabad",
       "phone": "123456789",
       "product": "Primevideo",
-      "due-date": "30-06-2021",
+      "due": "30-06-2021",
       "total": "999"
     },
     {
-      "id": 1,
+      "id": 2,
       "customername": "Roja",
       "address": "Secundrabad",
       "phone": "123232345",
       "product": "Primevideo",
-      "due-date": "20-07-2021",
+      "due": "20-07-2021",
       "total": "999"
     },
     {
-      "id": 1,
+      "id": 3,
       "customername": "Teja",
       "address": "Nampalli",
       "phone": "6789956789",
       "product": "Primevideo",
-      "due-date": "22-07-2021",
+      "due": "22-07-2021",
       "total": "999"
     },
     {
-      "id": 1,
+      "id": 4,
       "customername": "Maza",
       "address": "Madinaguda",
       "phone": "123451234",
       "product": "Primevideo",
-      "due-date": "23-07-2021",
+      "due": "23-07-2021",
       "total": "999"
     }
   ]
