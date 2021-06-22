@@ -1,0 +1,33 @@
+<div *ngIf="alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Deleted</strong> Successfull ! ☺.
+    <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Adress</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Product</th>
+          <th scope="col">Due-date</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let orders of collection">
+            <td>{{orders.id}}</td>
+            <td>{{orders.customername}}</td>
+            <td>{{orders.address}}</td>
+            <td>{{orders.phone}}</td>
+            <td>{{orders.product}}</td>
+            <td>{{orders.due-date}}</td>
+            <td>{{orders.total}}</td>
+            <td><a routerLink="/update/{{orders.id}}">
+              <i class="fa fa-edit" style="font-size:30px;color:rgb(10, 2, 116); cursor: pointer;"></i></a>&nbsp; &nbsp; 
+            <i (click)="deleteOrders(orders.id)" class="fa fa-trash-o" style="font-size:30px;color:red; cursor: pointer;"></i></td>
+          </tr>
+      </tbody>
+    </table>
