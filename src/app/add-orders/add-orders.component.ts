@@ -10,9 +10,9 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class AddOrdersComponent implements OnInit {
 
   alert:boolean = false;
-  addOrder= new FormGroup({
+    addOrder= new FormGroup({
     customername: new FormControl(''),
-    adress: new FormControl(''),
+    address: new FormControl(''),
     phone: new FormControl(''),
     product: new FormControl(''),
     due: new FormControl(''),

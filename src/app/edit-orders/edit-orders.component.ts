@@ -13,7 +13,7 @@ export class EditOrdersComponent implements OnInit {
   alert:boolean = false;
   editOrder= new FormGroup({
     customername: new FormControl(''),
-    adress: new FormControl(''),
+    address: new FormControl(''),
     phone: new FormControl(''),
     product: new FormControl(''),
     due: new FormControl(''),
@@ -27,10 +27,10 @@ export class EditOrdersComponent implements OnInit {
     this.orders.getCurrentData(this.router.snapshot.params.id).subscribe((result)=>{
       this.editOrder= new FormGroup({
         customername: new FormControl(result['customername']),
-        adress: new FormControl(result['address']),
+        address: new FormControl(result['address']),
         phone: new FormControl(result['phone']),
         product: new FormControl(result['product']),
-        due: new FormControl(result['due-date']),
+        due: new FormControl(result['due']),
         total: new FormControl(result['total'])
       })
     })

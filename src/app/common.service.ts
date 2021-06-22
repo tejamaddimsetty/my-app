@@ -7,7 +7,8 @@ import { ReturnStatement } from '@angular/compiler';
   providedIn: 'root'
 })
 export class CommonService {
-  URL= "http://localhost:3000/orders"
+  URL= "/api/orders"
+
     constructor(private _http:HttpClient) { }
     getOrdersList(){
      return this._http.get(this.URL);
