@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../common.service';
 import { FormGroup, FormControl } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-edit-orders',
@@ -19,8 +20,7 @@ export class EditOrdersComponent implements OnInit {
     due: new FormControl(''),
     total: new FormControl('')
   })
-  constructor(private orders:CommonService, private router:ActivatedRoute) { }
-
+  constructor(public routerlink:Router, private orders:CommonService, private router:ActivatedRoute) { }
 
   ngOnInit(): void {
     console.log(this.router.snapshot.params.id)
@@ -39,6 +39,7 @@ export class EditOrdersComponent implements OnInit {
     this.orders.updateOrders(this.router.snapshot.params.id,this.editOrder.value).subscribe((result)=>{
       console.log(result,"data updated successfull")
       this.alert=true;
+      this.routerlink.navigate(['/list']);
     })
   }
   closeAlert(){

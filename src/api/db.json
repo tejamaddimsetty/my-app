@@ -74,6 +74,24 @@
       "due": "01-12-2021",
       "total": "705",
       "id": 7
+    },
+    {
+      "customername": "Imran",
+      "address": "Vijayawada",
+      "phone": "12341234123",
+      "product": "HBO max",
+      "due": "18-09-2021",
+      "total": "1500",
+      "id": 8
+    },
+    {
+      "customername": "Sanjai",
+      "address": "Vijayawada",
+      "phone": "123489765",
+      "product": "Pramount",
+      "due": "17-12-2022",
+      "total": "1500",
+      "id": 9
     }
   ]
 }

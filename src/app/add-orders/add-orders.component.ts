@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CommonService } from '../common.service';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-orders',
@@ -18,7 +19,7 @@ export class AddOrdersComponent implements OnInit {
     due: new FormControl(''),
     total: new FormControl('')
   })
-  constructor(private orders:CommonService) { }
+  constructor(public routerlink:Router, private orders:CommonService) { }
 
   ngOnInit(): void {
   }
@@ -28,6 +29,7 @@ export class AddOrdersComponent implements OnInit {
       this.alert = true;
       this.addOrder.reset({});
       console.log("Get Data From Service", result)
+      this.routerlink.navigate(['/list']);
     })
   }
   closeAlert(){

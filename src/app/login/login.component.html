@@ -1,3 +1,8 @@
-<input type="username" [(ngModel)]="username">
-<input type="password" [(ngModel)]="password">
+Username &nbsp;<input type="username" [(ngModel)]="username"><br>
+<br>
+Password &nbsp;<input type="password" [(ngModel)]="password"><br>
+<br>
+<input type="checkbox" [checked]="rememberme"     id="saveUserNameCheckBox" 
+(change)="rememberme = !rememberme">Remember Me
+<br><br>
 <button type="submit" (click)="onSubmit()">Login</button>
