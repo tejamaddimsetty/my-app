@@ -2,13 +2,18 @@
   "users": [
     {
       "id": 1,
-      "username": "Barcelona",
+      "username": "Ramesh",
       "password": "abc123"
     },
     {
       "id": 2,
-      "username": "Madrid",
+      "username": "Suresh",
       "password": "123abc"
+    },
+    {
+      "id": 3,
+      "username": "Admin",
+      "password": "admin"
     }
   ],
   "orders": [
