@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class EditOrdersComponent implements OnInit {
 
   alert:boolean = false;
-  editOrder= new FormGroup({
+    editOrder= new FormGroup({
     customername: new FormControl(''),
     address: new FormControl(''),
     phone: new FormControl(''),

@@ -13,13 +13,13 @@
   ],
   "orders": [
     {
-      "id": 1,
       "customername": "Raja",
       "address": "Hyderabad",
       "phone": "123456789",
-      "product": "Primevideo",
+      "product": "Netflix",
       "due": "30-06-2021",
-      "total": "999"
+      "total": "999",
+      "id": 1
     },
     {
       "id": 2,
@@ -50,16 +50,16 @@
     },
     {
       "customername": "Sharuk Khan",
-      "adress": "Mumbai",
+      "address": "Mumbai",
       "phone": "123455555",
       "product": "Prime",
-      "due": "",
+      "due": "23-07-2021",
       "total": "999",
       "id": 5
     },
     {
       "customername": "Shakila",
-      "adress": "Ammerpet",
+      "address": "Ammerpet",
       "phone": "9848737799",
       "product": "Netflix",
       "due": "30-10-2021",
@@ -68,39 +68,12 @@
     },
     {
       "customername": "Sid Patnayak",
-      "adress": "Vijayawada",
+      "address": "Vijayawada",
       "phone": "1234556565656",
       "product": "Alt Balaji",
       "due": "01-12-2021",
       "total": "705",
       "id": 7
-    },
-    {
-      "customername": "Vaibhav",
-      "address": "",
-      "phone": "123412341",
-      "product": "Hulu",
-      "due": "17-08-2021",
-      "total": "180",
-      "id": 8
-    },
-    {
-      "customername": "Dhrani",
-      "address": "Vijayawada",
-      "phone": "9494819667",
-      "product": "Netflix",
-      "due": "02-01-2022",
-      "total": "899",
-      "id": 9
-    },
-    {
-      "customername": "Teja",
-      "address": "Vijayawada",
-      "phone": "9848737799",
-      "product": "Prime",
-      "due": "21-09-2021",
-      "total": "899",
-      "id": 10
     }
   ]
 }
